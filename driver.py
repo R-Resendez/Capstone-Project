@@ -188,7 +188,7 @@ def main():
 
         # Now that classifiction is done the FPS count can be added to the cv2 window with color, font, size, and positon.
         cv2.putText(frame_resized, 'FPS: {0:.2f}'.format(1/(time.time() - frame_start)),(30,50),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2,cv2.LINE_AA)
-        cv2.imshow('Object detector', frame_resized)
+        cv2.imshow('Porch Pirate Detection System', frame_resized)
 
         # If the user pressed q on the keyboard than the loop will break allowing the program to gracefully exit.
         if cv2.waitKey(1) & 0xFF == ord('q'):
